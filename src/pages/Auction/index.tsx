@@ -16,8 +16,10 @@ const Auction = () => (
       <div className="auction__main">
       <AuctionGallery/>
       <div className="auction__info">
+      <div className="auction__info_block1">
       <AuctionInfoMain/>
       <AuctionBid/>
+      </div>
       <AuctionInfoFiles/>
       </div>
       </div>

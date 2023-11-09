@@ -5,22 +5,115 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    &__volume {
+       display: flex;
+       width: 100%;
+       align-items: center;
+       justify-content: end;
+       &>img {
+        margin: 0;
+        padding: 0;
+       }
+    }
     &__banner {
         border-radius: 50%;
         background-color: rgba(9, 64, 103, 0.20);
         box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.16);
         width: 162px; 
         height: 162px;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &_innerCircle {
             background-color: #FFF;
             box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.64);
             position: absolute;
             width: 132px;
             height: 132px;
-            bottom: 15px;
-            left: 15px;
             border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            gap:2px;
+            align-items: center;
+            justify-content: center;
+            &_p {
+                color: var(--Tert, #5F6C7B);
+                /* Subtitle 2 / Roboto / Medium / 14 */
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.014px;
+            }
+            &_priceTag {
+                color: var(--Sec, #094067);
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.024px;
+            }
+        }
+    }
+    &__previousBids {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &_header {
+            border-radius: 16px 16px 0px 0px;
+            background: var(--Sec, #094067);
+            padding: 10px 8px;
+            width: 100%;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.024px;
+        }
+        &_container {
+            display: flex;
+            gap: 8px;
+        }
+        &_profile {
+            border-radius: 8px;
+            background: #FFF;
+            box-shadow: 0px 2px 38px 0px rgba(9, 64, 103, 0.12);
+            padding: 4px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            &_details {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                &_countryName {
+                    display: flex;
+                    gap: 4px;
+                    color: var(--Tert, #5F6C7B);
+                    /* Caption /  Roboto / Regular / 12 */
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.048px;
+                }
+                &_priceTag {
+                    color: var(--Tert, #5F6C7B);
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.048px;
+                }
+            }
         }
     }
      &__amount {

@@ -1,7 +1,12 @@
+@import '../../../variables.scss';
+
 .auctionInfoMain {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    @media (max-width: $mobile) {
+        display: none;
+    }
     
         &__row {
         border-radius: 8px;
