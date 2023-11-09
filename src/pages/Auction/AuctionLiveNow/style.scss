@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+
+.auctionLiveNow {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+ &__text {
+    color: var(--Success, #4CAF50);
+    /* H4 / Roboto / Regular / 34 */
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.085px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    @media (max-width: $tablet) {
+        font-size: 34px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 24px;
+}
+ }
+ &__participants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_number {
+        color: var(--Tert, #5F6C7B);
+        /* H5 / Roboto / Regular / 24 */
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &_left {
+        color: #5F6C7B;
+        /* Subtitle 1 / Roboto / Regular / 16 */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.024px;
+    }
+ }
+}

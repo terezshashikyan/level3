@@ -1,0 +1,59 @@
+@import '../../../variables.scss';
+
+.AuctionNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+    }
+    &__path{
+        display: flex;
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            justify-content: start;
+        }
+        &_button {
+            padding: 8px 11px;
+            color: var(--Sec, #094067);
+            /* Caption /  Roboto / Regular / 12 */
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.048px;
+            border: none;
+            border-radius: 15px;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        &_saleList {
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            margin-left: -5px;
+            &_arrow {
+                @media (min-width: $tablet) {
+                    display: none;
+                }
+            }
+        }
+        &_calendar {
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            margin-left: -5px;
+        }
+        &_auctionName {
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            margin-left: -5px;
+            background-color: #094067;
+            color: #FFF;
+        }
+        &_calendar, &_auctionName, &_home {
+            @media screen and (max-width: $tablet) {
+                display: none;
+            }
+        }
+    }
+}

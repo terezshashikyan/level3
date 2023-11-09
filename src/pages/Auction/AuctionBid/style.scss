@@ -1,0 +1,102 @@
+@import '../../../variables.scss';
+
+.auctionBid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    &__banner {
+        border-radius: 50%;
+        background-color: rgba(9, 64, 103, 0.20);
+        box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.16);
+        width: 162px; 
+        height: 162px;
+        position: relative;
+        &_innerCircle {
+            background-color: #FFF;
+            box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.64);
+            position: absolute;
+            width: 132px;
+            height: 132px;
+            bottom: 15px;
+            left: 15px;
+            border-radius: 50%;
+        }
+    }
+     &__amount {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_input {
+            border-radius: 25px;
+            background: #FFF;
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            padding: 12px;
+            color: var(--Sec, #094067);
+            border: none;
+            text-align: center;
+            /* Subtitle 1 / Roboto / Bold / 16 */
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.024px;
+        }
+     }
+     &__bidNow {
+            &_btn {
+                border-radius: 74px;
+                border: none;
+                background: #094067;
+                padding: 16px;
+                color: #FFF;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.024px;
+                width: 100%;
+             };
+     };
+     
+     &__buyNow {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        &_btn {
+            border-radius: 74px;
+            border: 1px solid #3DA9FC;
+            background: white;
+            padding: 16px;
+            color: #3DA9FC;
+            text-align: center;
+            /* Subtitle 1 / Roboto / Regular / 16 */
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.024px;
+            width: 100%;
+        };
+        &_priceTag {
+            color: var(--Sec, #094067);
+            text-align: center;
+            /* Subtitle 1 / Roboto / Bold / 16 */
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.024px;
+            width: 100%;
+        };
+    };
+}

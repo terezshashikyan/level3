@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+.auction {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__main {
+        display: flex;
+        gap: 14px;
+        align-items: start;
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        };
+    }
+    &__info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px;
+        justify-content: start;
+        align-items: start;
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import '../../../variables.scss';
+
+.auctionHeader {
+    border-radius: 16px 16px 0px 0px;
+    background: var(--Sec, #094067);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: center;
+    }
+    &__h1 {
+        color: var(--Snow-white, #FFF);
+        font-family: Roboto;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.085px;
+        text-align: center;
+        @media (max-width: $tablet) {
+            font-size: 24px;
+        }
+        @media (max-width: $mobile) {
+            font-size: 16px;
+    }
+}
+    &__lot {
+        &_title {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @media (max-width: $tablet) {
+            font-size: 20px;
+        }
+        @media (max-width: $mobile) {
+            font-size: 14px;
+        }
+        }
+        &_number {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        @media (max-width: $mobile) {
+            font-size: 14px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 20px;
+        }
+        }
+    }
+    &__upcomingLots {
+        text-align: left;
+        color: #FFF;
+        /* H5 / Roboto / Regular / 24 */
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+   
+}
