@@ -11,6 +11,23 @@
          display: flex;
          padding: 8px;
          gap: 8px;
+         &_img {
+            position: relative;
+            &_btn {
+                position: absolute;
+                bottom: 0;
+                border-radius: 8px;
+                background:#094067; 
+                color: #FFF;
+                border: none;
+                width: 100%;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: 0.048px;
+            }
+         }
          &_details {
             display: flex;
             flex-direction: column;
@@ -31,6 +48,9 @@
          }
     }
     &__mobileAndTablet {
+        @media (min-width: $tablet){
+            display: none;
+        }
         &__button{
             border-radius: 34px;
             background: #FFF;
@@ -44,9 +64,6 @@
             font-size: 16px;
             font-weight: 400;
             letter-spacing: 0.024px;
-        }
-        @media (min-width: $tablet){
-            display: none;
         }
     }
     &__desktop {
