@@ -5,6 +5,7 @@ import AuctionBid from "./AuctionBid";
 import AuctionInfoFiles from "./AuctionInfoFiles";
 import AuctionGallery from "./AuctionGallery";
 import AuctionLiveNow from "./AuctionLiveNow";
+import UpcomingLots from "./UpcomingLots";
 
 import './style.scss';
 
@@ -22,6 +23,7 @@ const Auction = () => (
       </div>
       <AuctionInfoFiles/>
       </div>
+      <UpcomingLots/>
       </div>
     </section>
 )
