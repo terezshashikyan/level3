@@ -11,6 +11,7 @@ import "./style.scss";
 
 const AuctionBid = () => (
   <section className="auctionBid">
+    <div className="auctionBid__volume"><img src={volume} alt="volume"/></div>
     <div className="auctionBid__banner">
       <div className="auctionBid__banner_innerCircle">
         <img src={UAE} alt="uae" />
@@ -20,7 +21,9 @@ const AuctionBid = () => (
       </div>
     </div>
     <div className="auctionBid__amount">
+      <span className="auctionBid__amount_change">-</span>
       <input className="auctionBid__amount_input" value="$1.800" />
+      <span className="auctionBid__amount_change">+</span>
     </div>
     <button className="auctionBid__bidNow_btn">Bid</button>
     <div className="auctionBid__previousBids">

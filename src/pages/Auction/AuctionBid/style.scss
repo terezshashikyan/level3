@@ -1,13 +1,14 @@
 @import '../../../variables.scss';
 
 .auctionBid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     &__volume {
-       display: flex;
        width: 100%;
+       display: flex;
        align-items: center;
        justify-content: end;
        &>img {
@@ -15,181 +16,172 @@
         padding: 0;
        }
     }
+    &__volume {
+        width: 100%;
+        float: left;
+    }
     &__banner {
-        border-radius: 50%;
-        background-color: rgba(9, 64, 103, 0.20);
-        box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.16);
         width: 162px; 
         height: 162px;
         display: flex;
+        border-radius: 50%;
         align-items: center;
         justify-content: center;
+        background-color: rgba(9, 64, 103, 0.20);
+        box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.16);
         &_innerCircle {
-            background-color: #FFF;
-            box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.64);
-            position: absolute;
+            gap:2px;
             width: 132px;
             height: 132px;
-            border-radius: 50%;
             display: flex;
-            flex-direction: column;
-            gap:2px;
+            border-radius: 50%;
             align-items: center;
+            flex-direction: column;
             justify-content: center;
+            background-color: #FFF;
+            box-shadow: 0px 4px 38px rgba(9, 64, 103, 0.64);
             &_p {
-                color: var(--Tert, #5F6C7B);
-                /* Subtitle 2 / Roboto / Medium / 14 */
-                font-family: Roboto;
+                color:#5F6C7B;
                 font-size: 14px;
-                font-style: normal;
                 font-weight: 500;
-                line-height: normal;
+                font-family: Roboto;
                 letter-spacing: 0.014px;
             }
             &_priceTag {
-                color: var(--Sec, #094067);
-                font-family: Roboto;
+                color:#094067;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 700;
-                line-height: normal;
+                font-family: Roboto;
                 letter-spacing: 0.024px;
             }
         }
     }
     &__previousBids {
+        gap: 8px;
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 8px;
         &_header {
-            border-radius: 16px 16px 0px 0px;
-            background: var(--Sec, #094067);
-            padding: 10px 8px;
             width: 100%;
             color: #FFF;
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            padding: 10px 8px;
+            font-family: Roboto;
+            background:#094067;
             letter-spacing: 0.024px;
+            border-radius: 16px 16px 0px 0px;
         }
         &_container {
-            display: flex;
             gap: 8px;
+            display: flex;
         }
         &_profile {
+            display: flex;
+            padding: 4px 8px;
             border-radius: 8px;
             background: #FFF;
-            box-shadow: 0px 2px 38px 0px rgba(9, 64, 103, 0.12);
-            padding: 4px 8px;
-            display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0px 2px 38px 0px rgba(9, 64, 103, 0.12);
             gap: 8px;
             &_details {
                 display: flex;
                 flex-direction: column;
                 gap: 4px;
                 &_countryName {
-                    display: flex;
                     gap: 4px;
-                    color: var(--Tert, #5F6C7B);
-                    /* Caption /  Roboto / Regular / 12 */
-                    font-family: Roboto;
+                    display: flex;
+                    color:#5F6C7B;
                     font-size: 12px;
-                    font-style: normal;
                     font-weight: 400;
-                    line-height: normal;
+                    font-family: Roboto;
                     letter-spacing: 0.048px;
                 }
                 &_priceTag {
-                    color: var(--Tert, #5F6C7B);
-                    font-family: Roboto;
+                    color:#5F6C7B;
                     font-size: 12px;
-                    font-style: normal;
                     font-weight: 700;
-                    line-height: normal;
+                    font-family: Roboto;
                     letter-spacing: 0.048px;
                 }
             }
         }
     }
+
      &__amount {
-        width: 100%;
+        gap: 15px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        &_change {
+            color: white;
+            border-radius: 50%;
+            padding: 8px 16px;
+            background-color:#094067;
+        }
         &_input {
-            border-radius: 25px;
-            background: #FFF;
-            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            width: 100%;
             padding: 12px;
-            color: var(--Sec, #094067);
             border: none;
-            text-align: center;
-            /* Subtitle 1 / Roboto / Bold / 16 */
-            font-family: Roboto;
+            color:#094067;
             font-size: 16px;
-            font-style: normal;
             font-weight: 700;
-            line-height: normal;
+            max-width: 138px;
+            background: #FFF;
+            text-align: center;
+            font-family: Roboto;
+            border-radius: 25px;
             letter-spacing: 0.024px;
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
         }
      }
      &__bidNow {
             &_btn {
-                border-radius: 74px;
+                width: 100%;
                 border: none;
-                background: #094067;
                 padding: 16px;
                 color: #FFF;
-                text-align: center;
-                font-family: Roboto;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 400;
                 line-height: 18px;
+                border-radius: 74px;
+                text-align: center;
+                font-family: Roboto;
+                background: #094067;
                 letter-spacing: 0.024px;
-                width: 100%;
              };
      };
      
      &__buyNow {
+        gap: 6px;
         width: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 6px;
+        flex-direction: column;
         &_btn {
-            border-radius: 74px;
-            border: 1px solid #3DA9FC;
-            background: white;
+            width: 100%;
             padding: 16px;
             color: #3DA9FC;
-            text-align: center;
-            /* Subtitle 1 / Roboto / Regular / 16 */
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
             line-height: 18px;
+            background: white;
+            text-align: center;
+            font-family: Roboto;
+            border-radius: 74px;
             letter-spacing: 0.024px;
-            width: 100%;
+            border: 1px solid #3DA9FC;
         };
         &_priceTag {
-            color: var(--Sec, #094067);
-            text-align: center;
-            /* Subtitle 1 / Roboto / Bold / 16 */
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.024px;
             width: 100%;
+            color:#094067;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            font-family: Roboto;
+            letter-spacing: 0.024px;
         };
     };
 }

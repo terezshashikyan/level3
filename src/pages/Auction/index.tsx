@@ -1,31 +1,31 @@
+import AuctionBid from "./AuctionBid";
+import UpcomingLots from "./UpcomingLots";
 import AuctionNavbar from "./AuctionNavbar";
 import AuctionHeader from "./AuctionHeader";
-import AuctionInfoMain from "./AuctionInfoMain";
-import AuctionBid from "./AuctionBid";
-import AuctionInfoFiles from "./AuctionInfoFiles";
 import AuctionGallery from "./AuctionGallery";
 import AuctionLiveNow from "./AuctionLiveNow";
-import UpcomingLots from "./UpcomingLots";
+import AuctionInfoMain from "./AuctionInfoMain";
+import AuctionInfoFiles from "./AuctionInfoFiles";
 
-import './style.scss';
+import "./style.scss";
 
 const Auction = () => (
-    <section className="auction container">
-      <AuctionNavbar/>
-      <AuctionLiveNow/>
-      <AuctionHeader/>
-      <div className="auction__main">
-      <AuctionGallery/>
+  <section className="auction container">
+    <AuctionNavbar />
+    <AuctionLiveNow />
+    <AuctionHeader />
+    <div className="auction__main">
+      <AuctionGallery />
       <div className="auction__info">
-      <div className="auction__info_block1">
-      <AuctionInfoMain/>
-      <AuctionBid/>
+        <div className="auction__info_block1">
+          <AuctionInfoMain />
+          <AuctionBid />
+        </div>
+        <AuctionInfoFiles />
       </div>
-      <AuctionInfoFiles/>
-      </div>
-      <UpcomingLots/>
-      </div>
-    </section>
-)
+      <UpcomingLots />
+    </div>
+  </section>
+);
 
 export default Auction;

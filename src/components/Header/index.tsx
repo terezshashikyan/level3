@@ -1,4 +1,5 @@
 import { Logo, us, Hamburger } from "../../assets/icons";
+import Sidebar from "../Sidebar";
 import ArrowButton from "../ArrowButton";
 
 import "./style.scss";
@@ -41,8 +42,10 @@ const Header = () => (
           <ArrowButton />
         </div>
       </div>
-      <img className="header__sideBar" src={Hamburger} alt="menu" />
     </div>
+    <div className="header__sidebar">
+      <Sidebar/>
+      </div>
   </header>
 );
 

@@ -1,16 +1,16 @@
+import Auction from './pages/Auction';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Auction from './pages/Auction';
+
 import './App.scss';
 
-function App() {
-  return (
+const App = () => 
+ (
     <div className="App">
      <Header/>
      <Auction/>
      <Footer/>
     </div>
   );
-}
 
 export default App;

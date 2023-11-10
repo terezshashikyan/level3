@@ -1,18 +1,18 @@
 @import '../../../variables.scss';
 
 .auctionGallery {
+    gap: 6px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
     &__mainImg {
         @media(max-width: $mobile) {
             display: none;
         }
     }
     &__images {
+        gap: 4px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4px;
         @media screen and (max-width: $tablet) {
             display: none;
         }
@@ -21,27 +21,24 @@
         }
   
         &_loadMoreBtn {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            bottom: 0;
             left: 0;
             right: 0;
-            background: transparent;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
             border: none;
             color: #FFF;
-            /* Subtitle 1 / Roboto / Regular / 16 */
-            font-family: Roboto;
             font-size: 16px;
-            font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            position: absolute;
+            font-family: Roboto;
+            background: transparent;
             letter-spacing: 0.024px;
         }
     }
     &__imagesMobile {
-        display: flex;
         gap: 4px;
+        display: flex;
         overflow: scroll;
         @media screen and (min-width: $tablet) {
             display: none;

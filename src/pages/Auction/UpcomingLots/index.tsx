@@ -11,13 +11,18 @@ const UpcomingLots = () => {
   const lotsRenderer = LOTS.map((lot) => (
     <div className="upcomingLots__lot">
       <div className="upcomingLots__lot_img">
-      <img src={lot.src} alt="lot" />
-      <button className="upcomingLots__lot_img_btn">Next</button>
+        <img src={lot.src} alt="lot" />
+        <button className="upcomingLots__lot_img_btn">Next</button>
       </div>
       <div className="upcomingLots__lot_details">
         <span className="upcomingLots__lot_details_name">{lot.name}</span>
         <span className="upcomingLots__lot_details_text">Lot: {lot.lot}</span>
-        <span className="upcomingLots__lot_details_text">Lot: {lot.lot}</span>
+        <span className="upcomingLots__lot_details_text">
+          Location: {lot.location}
+        </span>
+        <span className="upcomingLots__lot_details_text">
+          Current Bid: {lot.currentBid}
+        </span>
       </div>
     </div>
   ));

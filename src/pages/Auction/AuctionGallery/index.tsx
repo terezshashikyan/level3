@@ -44,7 +44,9 @@ const AuctionGallery = () => {
     return <img key={image.id} src={image.src} alt="bmw" />;
   });
 
-  const imagesRendererforMobile = IMAGES.map((image) => <img key={image.id} src={image.src} alt="bmw" />);
+  const imagesRendererforMobile = IMAGES.map((image) => (
+    <img key={image.id} src={image.src} alt="bmw" />
+  ));
   return (
     <section className="auctionGallery">
       <picture className="auctionGallery__mainImg">
@@ -53,7 +55,9 @@ const AuctionGallery = () => {
         <img className="auctions__gallery-img" src={bmwDesktop} alt="bmw" />
       </picture>
       <div className="auctionGallery__images">{imagesRenderer}</div>
-      <div className="auctionGallery__imagesMobile">{imagesRendererforMobile}</div>
+      <div className="auctionGallery__imagesMobile">
+        {imagesRendererforMobile}
+      </div>
     </section>
   );
 };
