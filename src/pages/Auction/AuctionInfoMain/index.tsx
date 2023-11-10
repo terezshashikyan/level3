@@ -4,7 +4,7 @@ const AuctionInfoMain = () => (
   <section className="auctionInfoMain">
     <div className="auctionInfoMain__row">
       <p className="auctionInfoMain__row_title">Vin:</p>
-      <p className="auctionInfoMain__row_description">1GNCS18Z3M0115561</p>
+      <p className="auctionInfoMain__row_description">1GNCS18Z3 M0115561</p>
     </div>
     <div className="auctionInfoMain__row">
       <p className="auctionInfoMain__row_title">Odometer:</p>

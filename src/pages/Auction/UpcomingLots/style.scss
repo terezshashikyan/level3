@@ -1,0 +1,57 @@
+@import '../../../variables.scss';
+
+.upcomingLots {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__lot {
+         border-radius: 8px;
+         background: #FFF;
+         box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+         display: flex;
+         padding: 8px;
+         gap: 8px;
+         &_details {
+            display: flex;
+            flex-direction: column;
+            &_name {
+                color:#094067;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.024px;
+            }
+            &_text {
+                color: #5F6C7B;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.035px;
+            }
+         }
+    }
+    &__mobileAndTablet {
+        &__button{
+            border-radius: 34px;
+            background: #FFF;
+            border: none;
+            box-shadow: 0px 4px 38px 0px rgba(9, 64, 103, 0.12);
+            padding: 16px;
+            width: 100%;
+            color: #094067;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.024px;
+        }
+        @media (min-width: $tablet){
+            display: none;
+        }
+    }
+    &__desktop {
+        @media (max-width: $tablet){
+            display: none;
+        }
+    }
+}

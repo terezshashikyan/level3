@@ -5,7 +5,7 @@
     background: var(--Sec, #094067);
     padding: 16px;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 1fr 1.5fr 1fr;
     gap: 8px;
     align-items: center;
     justify-content: start;

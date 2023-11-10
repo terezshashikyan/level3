@@ -4,7 +4,7 @@ export const LOTS = [
     {
         id: 1,
         src: lotImg1,
-        name: '2019 - ToyotaCorolla',
+        name: '2019 - Toyota Corolla',
         lot: 12345678,
         location: 'Georgia',
         currentBid: '$3400',
@@ -12,7 +12,7 @@ export const LOTS = [
     {
         id: 2,
         src: lotImg1,
-        name: '2019 - ToyotaCorolla',
+        name: '2019 - Toyota Corolla',
         lot: 12345678,
         location: 'Georgia',
         currentBid: '$3400',
@@ -20,7 +20,7 @@ export const LOTS = [
     {
         id: 3,
         src: lotImg1,
-        name: '2019 - ToyotaCorolla',
+        name: '2019 - Toyota Corolla',
         lot: 12345678,
         location: 'Georgia',
         currentBid: '$3400',
@@ -28,7 +28,7 @@ export const LOTS = [
     {
         id: 4,
         src: lotImg1,
-        name: '2019 - ToyotaCorolla',
+        name: '2019 - Toyota Corolla',
         lot: 12345678,
         location: 'Georgia',
         currentBid: '$3400',
